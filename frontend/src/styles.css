@@ -1,0 +1,145 @@
+:root {
+  --teal: #0096a8;
+  --teal-dark: #007a89;
+  --dark: #1a1a1a;
+  --gray-bg: #f4f6f7;
+  --border: #dfe3e5;
+  --warn: #c0392b;
+  --ok: #1e8e3e;
+  --pending: #b8860b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: var(--gray-bg);
+  color: var(--dark);
+}
+
+a {
+  color: var(--teal);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--teal);
+  color: #fff;
+  transition: background 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--teal-dark);
+}
+
+.btn:disabled {
+  background: #b7c1c4;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--teal);
+  border: 1px solid var(--teal);
+}
+
+.btn-secondary:hover {
+  background: #eafcff;
+}
+
+.btn-danger {
+  background: var(--warn);
+}
+
+.btn-danger:hover {
+  background: #96261a;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: var(--teal);
+  color: #fff;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  font-family: inherit;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  margin-top: 12px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.badge-DRAFT { background: #9aa4a8; }
+.badge-PENDING { background: var(--pending); }
+.badge-APPROVED { background: var(--ok); }
+.badge-REJECTED { background: var(--warn); }
+.badge-CANCELLED { background: #555; }
+
+.error-box {
+  background: #fdecea;
+  border: 1px solid #f5c6c0;
+  color: var(--warn);
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.success-box {
+  background: #e6f7ea;
+  border: 1px solid #bfe6c9;
+  color: var(--ok);
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 14px;
+}

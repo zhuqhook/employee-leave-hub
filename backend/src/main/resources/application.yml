@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: employee-leave-hub
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/leave_hub
+    username: leave_hub_user
+    password: leave_hub_pass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+app:
+  jwt:
+    secret: "CHANGE_ME_super_secret_key_min_32_chars_long_please_change_in_prod"
+    expiration-ms: 28800000 # 8h
+  upload:
+    dir: ./uploads/attachments
+  cors:
+    allowed-origins: "http://localhost:4200"
+
+logging:
+  level:
+    com.draxlmaier.leavehub: INFO
