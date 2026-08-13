@@ -30,7 +30,7 @@ GRANT ALL PRIVILEGES ON DATABASE leave_hub TO leave_hub_user;
 Datele de conectare sunt in `backend/src/main/resources/application.yml` (`spring.datasource.*`).
 Schema este creata automat de Hibernate (`ddl-auto: update`) la prima pornire
 
-### Rulare manuala
+### Rulare
 ```bash
 cd backend
 mvn spring-boot:run
@@ -54,7 +54,7 @@ Backend-ul porneste pe `http://localhost:8080`. La prima pornire, `DataSeeder` f
 
 ## 2. Frontend
 
-### Rulare manuala
+### Rulare
 ```bash
 cd frontend
 npm install
