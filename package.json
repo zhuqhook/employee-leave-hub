@@ -1,0 +1,11 @@
+{
+  "name": "employee-leave-hub",
+  "private": true,
+  "description": "porneste backend-ul si frontend-ul impreuna, intr-o singura fereastra",
+  "scripts": {
+    "dev": "concurrently -n BACKEND,FRONTEND -c blue,green --kill-others \"cd backend && mvn spring-boot:run\" \"cd frontend && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
