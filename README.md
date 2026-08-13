@@ -20,7 +20,7 @@ Necesitati:
 
 ## 1. Backend
 
-### Configurare bazei de date (PostgreSQL):  *necesar
+### Configurare bazei de date (PostgreSQL):
 ```sql
 CREATE DATABASE leave_hub;
 CREATE USER leave_hub_user WITH PASSWORD 'leave_hub_pass';
