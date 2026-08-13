@@ -8,9 +8,15 @@ Structura proiectului:
  - backend:    Spring Boot + Spring Security/JWT + Spring Data JPA + PostgreSQL + OpenPDF
  - frontend:   Angular 17 + Angular Router + HttpClient
 
+Necesitati:
+- Java 11+ (JDK si JRE)
+- Maven 3.6+
+- PostgreSQL 13+
+- Node.js si npm
+
 ## 1. Backend
 
-### Configurare bazei de date (PostgreSQL):
+### Configurare bazei de date (PostgreSQL):  *necesar
 ```sql
 CREATE DATABASE leave_hub;
 CREATE USER leave_hub_user WITH PASSWORD 'leave_hub_pass';
@@ -20,10 +26,14 @@ GRANT ALL PRIVILEGES ON DATABASE leave_hub TO leave_hub_user;
 Datele de conectare sunt in `backend/src/main/resources/application.yml` (`spring.datasource.*`).
 Schema este creata automat de Hibernate (`ddl-auto: update`) la prima pornire
 
-### Rulare
+### Rulare manuala
 ```bash
 cd backend
 mvn spring-boot:run
+```
+### Pentru rulare fara PostgreSQL
+```bash
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
 Backend-ul porneste pe `http://localhost:8080`. La prima pornire, `DataSeeder` face:
@@ -40,7 +50,7 @@ Backend-ul porneste pe `http://localhost:8080`. La prima pornire, `DataSeeder` f
 
 ## 2. Frontend
 
-### Rulare
+### Rulare manuala
 ```bash
 cd frontend
 npm install
@@ -48,3 +58,11 @@ npm start
 ```
 Aplicatia porneste pe `http://localhost:4200` si comunica cu backend-ul de pe `http://localhost:8080/api`
 (configurabil in `frontend/src/environments/environment.ts`)
+
+
+### Rulare mai simpla (luat in considerare ca deja au fost pornite manual si configurate)
+
+Deschide start.bat ,ruleaza frontend, backend simultan intr-un terminal
+Dupa 15-20 secunde se va deschide automat pagina web.
+
+Pentru a oprii totul, CTRL+C in terminal-ul deschis de start.bat 
