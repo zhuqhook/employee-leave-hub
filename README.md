@@ -14,7 +14,8 @@ Necesitati:
 - PostgreSQL 13+
 - Node.js si npm
 
-* start.bat - doar daca totul este deja set-up, pentru rulari mai simple
+
+### start.bat - doar daca totul este deja set-up, pentru rulari mai simple
 (un script mic pentru a rula frontend si backend simultan in terminal)
 
 ## 1. Backend
