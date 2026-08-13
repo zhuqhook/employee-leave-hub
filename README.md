@@ -26,7 +26,7 @@ cd backend
 mvn spring-boot:run
 ```
 
-Backend-ul porneste pe `http://localhost:8080`. La prima pornire, `DataSeeder` populeaza:
+Backend-ul porneste pe `http://localhost:8080`. La prima pornire, `DataSeeder` face:
 - tipuri de concediu: CO (concediu de odihna), CM (medical, necesita document), FP (fara plata), SPECIAL
 - 3 departamente: IT, HR, Productie
 - 3 conturi demo:  Rol / Email / Parola 
