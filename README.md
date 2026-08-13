@@ -14,6 +14,9 @@ Necesitati:
 - PostgreSQL 13+
 - Node.js si npm
 
+* start.bat - doar daca totul este deja set-up, pentru rulari mai simple
+(un script mic pentru a rula frontend si backend simultan in terminal)
+
 ## 1. Backend
 
 ### Configurare bazei de date (PostgreSQL):  *necesar
@@ -58,11 +61,3 @@ npm start
 ```
 Aplicatia porneste pe `http://localhost:4200` si comunica cu backend-ul de pe `http://localhost:8080/api`
 (configurabil in `frontend/src/environments/environment.ts`)
-
-
-### Rulare mai simpla (luat in considerare ca deja au fost pornite manual si configurate)
-
-Deschide start.bat ,ruleaza frontend, backend simultan intr-un terminal
-Dupa 15-20 secunde se va deschide automat pagina web.
-
-Pentru a oprii totul, CTRL+C in terminal-ul deschis de start.bat 
