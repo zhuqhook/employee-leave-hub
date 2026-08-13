@@ -16,7 +16,7 @@ Necesitati:
 
 
 ### start.bat - doar daca totul este deja set-up, pentru rulari mai simple
-(un script mic pentru a rula frontend si backend simultan in terminal)
+(un script mic pentru a rula frontend si backend simultan in terminal, deschide si site-ul)
 
 ## 1. Backend
 
