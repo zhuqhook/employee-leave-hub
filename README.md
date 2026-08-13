@@ -1,4 +1,4 @@
-#Employee Leave Hub
+# Employee Leave Hub
 
 Aplicatie web pentru gestionarea completa a ciclului de viata al cererilor de concediu:
 depunere de catre angajat, aprobare/respingere de catre responsabilul de departament sau
